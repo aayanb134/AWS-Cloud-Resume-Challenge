@@ -63,8 +63,11 @@
                     <h2 class="mb-5">Projects</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">3-Tier Architecture on AWS using Terraform</h3>
-                            <h4><a href="https://github.com/aayanb134/3-Tier-Architecture-AWS" target="_blank">GitHub Repo</a></h4>
+                            <h3 class="mb-0">3-Tier-Architecture</h3>
+                            <h4>
+                                <span class="heading"><a href="https://github.com/aayanb134/3-Tier-Architecture-AWS" target="_blank">GitHub Repo</a></span>
+                                <span class="heading" style="color:#3549CA;">AWS | Terraform | GitHub Actions</span>
+                            </h4>
                             <div class="subheading mb-3">Apache Web Application hosted on an EC2 server via Terraform</div>
                             <p>Consists of a VPC covering 2 AZs (Availability Zones). Each AZ has 1 Public and 2 Private Subnets. Public Subnet contains a NAT Gateway and an EC2 instance hosting the Apache Web Server. Private Subnet contains an EC2 Instance that accesses internet through SSH via NAT Gateway. Also contains an RDS Instance that stores data, as well as an ALB (Application Load Balancer) and an ASG (Auto Scaling Group) for scaling and load distribution. Setup a GitHub Actions workflow to automate any future changes to the infrastructure.</p>
                         </div>
@@ -72,7 +75,10 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">AWS Cloud Resume Challenge</h3>
-                            <h4><a href="https://github.com/aayanb134/AWS-Cloud-Resume-Challenge" target="_blank">GitHub Repo</a></h4>
+                            <h4>
+                                <span class="heading"><a href="https://github.com/aayanb134/AWS-Cloud-Resume-Challenge" target="_blank">GitHub Repo</a></span>
+                                <span class="heading" style="color:#3549CA;">AWS | Terraform | GitHub Actions | Python | HTML | CSS | Javascript</span>
+                            </h4>
                             <div class="subheading mb-3">Serverless Web Application hosting a portfolio</div>
                             <p>Took advantage of various AWS service such as Lambda, S3, API Gateway, DynamoDB and Cloudfront. Added a visitor counter using Python, which stores data in DynamoDB. Used API Gateway and Lambda to manage any interactions between the frontend and the DynamoDB database. Used Terraform to define and deploy AWS resources using IaC (Infrastructure as Code). Set up GitHub Actions for CI/CD (Continuous Integration/Continuous Deployment) for the frontend and backend</p>
                         </div>
