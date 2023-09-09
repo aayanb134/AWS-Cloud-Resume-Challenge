@@ -20,8 +20,8 @@ module "dynamodb-table" {
 }
 
 resource "aws_dynamodb_table_item" "visitor_count" {
-  name     = module.dynamodb-table.dynamodb_table_id
-  hash_key = "ID"
+  table_name = module.dynamodb-table.dynamodb_table_id
+  hash_key   = "ID"
   item = jsonencode({
     ID    = { "S" : "1" },
     views = { "N" : 300 }
