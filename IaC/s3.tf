@@ -65,6 +65,11 @@ output "s3_bucket_policy" {
   value       = module.s3-bucket.s3_bucket_policy
 }
 
+output "s3_bucket_regional_domain_name" {
+  description = "The bucket region_specific domain name. The bucket domain name including the region name, please refer here for format."
+  value       = module.s3_bucket.s3_bucket_regional_domain_name
+}
+
 output "s3_bucket_region" {
   description = "aws region that bucket is in"
   value       = module.s3-bucket.s3_bucket_region

@@ -1,3 +1,17 @@
-resource "aws_acm_certificate" "MyResume" {
-  certificate_arn = var.certificate_arn
+provider "aws" {
+  alias = "us-east-1"
+}
+
+module "acm" {
+  source  = "terraform-aws-modules/acm/aws"
+  version = "4.3.2"
+
+  domain_name = "aayan-resume.com"
+  zone_id     = "E1GKV45UMQK73X"
+
+  wait_for_validation = true
+
+  tags = {
+    Name = "aayan-resume.com"
+  }
 }

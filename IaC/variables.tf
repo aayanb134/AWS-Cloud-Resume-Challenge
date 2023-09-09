@@ -15,3 +15,15 @@ variable "route53_zone" {
   type        = string
   default     = "aayan-resume.com"
 }
+
+variable "business_division" {
+  description = "business division that infrastructure belongs to"
+  type        = string
+  default     = "IT"
+}
+
+variable "environment" {
+  description = "env variable used as prefix"
+  type        = list(any)
+  default     = ["test", "prod"]
+}
