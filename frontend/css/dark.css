@@ -1,0 +1,34 @@
+.dark {
+  background-color: #323539;
+  transition: all 300ms ease-in-out;
+}
+
+.dark p,
+h1,
+h2,
+span,
+a {
+  color: white;
+}
+
+.dark * {
+  color: white;
+}
+
+.dark .dark-button {
+  color: white;
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dark-button {
+  margin: 10px 20px;
+  color: black;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-radius: 20px;
+}
