@@ -1,9 +1,9 @@
 resource "aws_cloudfront_distribution" "s3_distribution" {
   depends_on = [module.acm, module.s3-bucket, module.route53]
   origin {
-    domain_name              = module.s3_bucket.s3_bucket_regional_domain_name
+    domain_name              = module.s3_bucket.s3_bucket_bucket_regional_domain_name
     origin_access_control_id = aws_cloudfront_origin_access_control.default.id
-    origin_id                = module.s3_bucket.s3_bucket_regional_domain_name
+    origin_id                = module.s3_bucket.s3_bucket_bucket_regional_domain_name
   }
 
   enabled             = true

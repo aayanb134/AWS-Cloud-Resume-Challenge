@@ -19,7 +19,7 @@ module "dynamodb-table" {
   tags = local.common_tags
 }
 
-resource "aws_dynamodb_table" "visitor_count" {
+resource "aws_dynamodb_table_item" "visitor_count" {
   name     = module.dynamodb-table.dynamodb_table_id
   hash_key = "ID"
   item = jsonencode({

@@ -15,7 +15,7 @@ module "s3-bucket" {
 
 resource "aws_s3_bucket_server_side_encryption_configuration" "default" {
   depends_on = [module.s3-bucket]
-  bucket     = module.s3_bucket.s3_bucket_id
+  bucket     = module.s3-bucket.s3_bucket_id
 
   rule {
     bucket_key_enabled = true
