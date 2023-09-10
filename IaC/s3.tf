@@ -24,7 +24,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "default" {
 
 resource "aws_s3_bucket_policy" "cloudfront_s3_policy" {
   depends_on = [aws_cloudfront_distribution.s3_distribution, module.s3-bucket]
-  bucket     = module.s3_bucket.s3_bucket_id
+  bucket     = module.s3-bucket.s3_bucket_id
   policy = jsonencode({
     "Version" : "2008-10-17",
     "Id" : "PolicyForCloudFrontPrivateContent",
