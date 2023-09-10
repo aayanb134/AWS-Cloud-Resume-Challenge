@@ -24,7 +24,7 @@ resource "aws_dynamodb_table_item" "visitor_count" {
   hash_key   = "ID"
   item = jsonencode({
     ID    = { "S" : "1" },
-    views = { "N" : 300 }
+    views = { "N" : "300" }
   })
 }
 

@@ -15,7 +15,7 @@ module "lambda" {
 
   policy_jsons = [
     file("lambda/lambda_policy.json"),
-    file("dynamodb_policy.json")
+    file("lambda/dynamodb_policy.json")
   ]
 
   create_lambda_function_url = true
