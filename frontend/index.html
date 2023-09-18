@@ -69,13 +69,18 @@
                     <h2 class="mb-5">Projects</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">3-Tier-Architecture</h3>
+                            <h3 class="mb-0">Terraform End to End Project</h3>
                             <h4>
-                                <span class="heading"><a href="https://github.com/aayanb134/3-Tier-Architecture-AWS" target="_blank">GitHub Repo</a></span>
+                                <span class="heading"><a href="https://github.com/aayanb134/Terraform-End-to-End" target="_blank">GitHub Repo</a></span>
                                 <span class="heading" style="color:#3549CA;">AWS | Terraform | GitHub Actions</span>
                             </h4>
-                            <div class="subheading mb-3">Apache Web Application hosted on an EC2 server via Terraform</div>
-                            <p>Consists of a VPC covering 2 AZs (Availability Zones). Each AZ has 1 Public and 2 Private Subnets. Public Subnet contains a NAT Gateway and an EC2 instance hosting the Apache Web Server. Private Subnet contains an EC2 Instance that accesses internet through SSH via NAT Gateway. Also contains an RDS Instance that stores data, as well as an ALB (Application Load Balancer) and an ASG (Auto Scaling Group) for scaling and load distribution. Setup a GitHub Actions workflow to automate any future changes to the infrastructure.</p>
+                            <div class="subheading mb-3">Nginx Web Application hosted on an EC2 server via Terraform</div>
+                            <p> Developed Terraform modules to automate AWS infrastructure, deploying Nginx on EC2 instances. 
+                                Created a well-architected VPC with NAT Gateway, security groups, and routing tables.
+                                Successfully managed and configured three different environments: production, development, and staging.
+                                Ensured secure and flexible credential management using environment variables, eliminating credential hardcoding.
+                                Set up a CI/CD pipeline using GitHub Actions for automated testing and deployments.
+                                Implemented best practices for version control and Git, maintaining a clear code history.</p>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -88,7 +93,18 @@
                             <div class="subheading mb-3">Serverless Web Application hosting a portfolio</div>
                             <p>Took advantage of various AWS service such as Lambda, S3, DynamoDB and Cloudfront. Added a visitor counter using Python and Javascript, which stores data in DynamoDB. Created a Lambda function using Python and its boto3 library, which acts as an API to manage any interactions between the frontend and the DynamoDB database. Used Terraform to define and deploy AWS resources using IaC (Infrastructure as Code). Set up GitHub Actions for CI/CD (Continuous Integration/Continuous Deployment) for the frontend and backend.</p>
                         </div>
-                </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">3-Tier-Architecture</h3>
+                            <h4>
+                                <span class="heading"><a href="https://github.com/aayanb134/3-Tier-Architecture-AWS" target="_blank">GitHub Repo</a></span>
+                                <span class="heading" style="color:#3549CA;">AWS | Terraform | GitHub Actions</span>
+                            </h4>
+                            <div class="subheading mb-3">Apache Web Application hosted on an EC2 server via Terraform</div>
+                            <p>Consists of a VPC covering 2 AZs (Availability Zones). Each AZ has 1 Public and 2 Private Subnets. Public Subnet contains a NAT Gateway and an EC2 instance hosting the Apache Web Server. Private Subnet contains an EC2 Instance that accesses internet through SSH via NAT Gateway. Also contains an RDS Instance that stores data, as well as an ALB (Application Load Balancer) and an ASG (Auto Scaling Group) for scaling and load distribution. Setup a GitHub Actions workflow to automate any future changes to the infrastructure.</p>
+                        </div>
+                    </div>
             </section>
             <hr class="m-0" />
             <!-- Education-->
